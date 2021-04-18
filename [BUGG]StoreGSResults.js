@@ -14,6 +14,8 @@ async function StoreResult (TEXT){
         const results=document.querySelectorAll(".g");
         const temp=[];
         results.forEach(items => {
+          // BUGG - skip the 1st node because it is stoping loop       [cant make logic]
+         /// console.log(items);
             let item={
                 heading:items.querySelector(".g h3").innerHTML
             };
